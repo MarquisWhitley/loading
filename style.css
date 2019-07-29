@@ -5,7 +5,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: #333;
+	background: green;
+	animation: animate1 5s forwards ease-in-out infinite;
 }
 .loading {
 	position: relative;
@@ -22,6 +23,20 @@ body {
 	height:20px;
 	width:10px;
 	animation: animate 2s ease-in-out infinite;
+}
+@keyframes animate1 {
+	25%{
+		background:purple;
+	}
+	50%{
+		background:blue;
+	}
+	75%{
+		background:yellow;
+	}
+	100%{
+		background:green;
+	}
 }
 @keyframes animate {
 	0%,100% {
